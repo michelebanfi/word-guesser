@@ -15496,7 +15496,7 @@ function createAndShare() {
   const targetWord =
     targetWords[Math.floor(Math.random() * targetWords.length)];
   let a = btoa(targetWord);
-  let string = a;
+  let string = "?situa=" + a;
   console.log(string);
   navigator.share({ url: string });
 }
