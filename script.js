@@ -15496,7 +15496,7 @@ function createAndShare() {
   const targetWord =
     targetWords[Math.floor(Math.random() * targetWords.length)];
   let a = btoa(targetWord);
-  let string = "?situa=" + a;
+  let string = "https://michelebanfi.github.io/word-guesser/?situa=" + a;
   console.log(string);
-  navigator.share({ url: string });
+  navigator.share({ text: string });
 }
